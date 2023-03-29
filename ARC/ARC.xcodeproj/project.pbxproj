@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2079A832957785BD4FB24C75 /* Pods_ARC_ARCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A1AA0BBA1C1E7A67883C47 /* Pods_ARC_ARCUITests.framework */; };
+		6932F60148CB7C99BE1824B0 /* Pods_ARCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D198FC24C0BE4FFE8E813FB2 /* Pods_ARCTests.framework */; };
+		AD644BCC1AAEA9C877331D58 /* Pods_ARC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA7764800BBA7AF5B2FFE3 /* Pods_ARC.framework */; };
+		D52946F929C8F526001E4D80 /* ARView+SelfSceneRecordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52946F729C8F526001E4D80 /* ARView+SelfSceneRecordable.swift */; };
+		D52946FA29C8F526001E4D80 /* ARView+MetalRecordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52946F829C8F526001E4D80 /* ARView+MetalRecordable.swift */; };
+		D52CB64329B59E3700BE3F17 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CB64229B59E3700BE3F17 /* CollectionViewController.swift */; };
+		D52CB64529B59E8200BE3F17 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CB64429B59E8200BE3F17 /* CollectionViewCell.swift */; };
+		D53FF4CA298CA5EA0052A1A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53FF4C9298CA5EA0052A1A8 /* AppDelegate.swift */; };
+		D53FF4CE298CA5EA0052A1A8 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D53FF4CD298CA5EA0052A1A8 /* Experience.rcproject */; };
+		D53FF4D1298CA5EA0052A1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53FF4CF298CA5EA0052A1A8 /* Main.storyboard */; };
+		D53FF4D3298CA5EE0052A1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53FF4D2298CA5EE0052A1A8 /* Assets.xcassets */; };
+		D53FF4D6298CA5EE0052A1A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53FF4D4298CA5EE0052A1A8 /* LaunchScreen.storyboard */; };
+		D53FF4E0298CA5EF0052A1A8 /* ARCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53FF4DF298CA5EF0052A1A8 /* ARCTests.swift */; };
+		D53FF4EA298CA5EF0052A1A8 /* ARCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53FF4E9298CA5EF0052A1A8 /* ARCUITests.swift */; };
+		D53FF4EC298CA5EF0052A1A8 /* ARCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53FF4EB298CA5EF0052A1A8 /* ARCUITestsLaunchTests.swift */; };
+		D53FF4F9298CA84B0052A1A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D53FF4F8298CA84B0052A1A8 /* GoogleService-Info.plist */; };
+		D5872C2D2998537F0061802F /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5872C2C2998537F0061802F /* ARViewContainer.swift */; };
+		D5872C2F299853FE0061802F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5872C2E299853FE0061802F /* ContentView.swift */; };
+		D5872C312998545A0061802F /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5872C302998545A0061802F /* SkeletonJoint.swift */; };
+		D5872C332998548D0061802F /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5872C322998548D0061802F /* SkeletonBone.swift */; };
+		D5872C35299855070061802F /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5872C34299855070061802F /* Bones.swift */; };
+		D5872C40299880F30061802F /* character in Resources */ = {isa = PBXBuildFile; fileRef = D5872C3F299880F30061802F /* character */; };
+		DC0B90EA29D20000007536EE /* DrawingEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0B90E929D20000007536EE /* DrawingEffectViewController.swift */; };
+		DC0B90EC29D200AB007536EE /* ObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0B90EB29D200AB007536EE /* ObjectService.swift */; };
+		DC25675329A1BDC80061BA91 /* EffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25675229A1BDC80061BA91 /* EffectsViewController.swift */; };
+		DC25675529A1C1D40061BA91 /* EffectsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25675429A1C1D40061BA91 /* EffectsCell.swift */; };
+		DC25675729A1C5510061BA91 /* EffectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25675629A1C5510061BA91 /* EffectsList.swift */; };
+		DC25675929A1D2930061BA91 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25675829A1D2930061BA91 /* ProfilePageViewController.swift */; };
+		DC25675B29A1D5E00061BA91 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25675A29A1D5E00061BA91 /* SignupViewController.swift */; };
+		DCC623D629A1E8920087659F /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC623D529A1E8920087659F /* SigninViewController.swift */; };
+		DCCD7EE329A19E6B0069251D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD7EE229A19E6B0069251D /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D53FF4DC298CA5EF0052A1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D53FF4BE298CA5EA0052A1A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53FF4C5298CA5EA0052A1A8;
+			remoteInfo = ARC;
+		};
+		D53FF4E6298CA5EF0052A1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D53FF4BE298CA5EA0052A1A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53FF4C5298CA5EA0052A1A8;
+			remoteInfo = ARC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4ED0979C9F6B2E0059DBA8D7 /* Pods-ARCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCTests.release.xcconfig"; path = "Target Support Files/Pods-ARCTests/Pods-ARCTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E11BC51C7CE92DC228859F1 /* Pods-ARC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARC.release.xcconfig"; path = "Target Support Files/Pods-ARC/Pods-ARC.release.xcconfig"; sourceTree = "<group>"; };
+		80CA7764800BBA7AF5B2FFE3 /* Pods_ARC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9036E249E956DD29F1588621 /* Pods-ARCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCTests.debug.xcconfig"; path = "Target Support Files/Pods-ARCTests/Pods-ARCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D186B19072576B366C203449 /* Pods-ARC-ARCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARC-ARCUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARC-ARCUITests/Pods-ARC-ARCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D198FC24C0BE4FFE8E813FB2 /* Pods_ARCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52946F729C8F526001E4D80 /* ARView+SelfSceneRecordable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARView+SelfSceneRecordable.swift"; sourceTree = "<group>"; };
+		D52946F829C8F526001E4D80 /* ARView+MetalRecordable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARView+MetalRecordable.swift"; sourceTree = "<group>"; };
+		D52CB64229B59E3700BE3F17 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D52CB64429B59E8200BE3F17 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D53FF4C6298CA5EA0052A1A8 /* ARC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53FF4C9298CA5EA0052A1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D53FF4CD298CA5EA0052A1A8 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		D53FF4D0298CA5EA0052A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D53FF4D2298CA5EE0052A1A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D53FF4D5298CA5EE0052A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D53FF4DB298CA5EF0052A1A8 /* ARCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53FF4DF298CA5EF0052A1A8 /* ARCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTests.swift; sourceTree = "<group>"; };
+		D53FF4E5298CA5EF0052A1A8 /* ARCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53FF4E9298CA5EF0052A1A8 /* ARCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCUITests.swift; sourceTree = "<group>"; };
+		D53FF4EB298CA5EF0052A1A8 /* ARCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D53FF4F8298CA84B0052A1A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5872C2B299852FF0061802F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5872C2C2998537F0061802F /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		D5872C2E299853FE0061802F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5872C302998545A0061802F /* SkeletonJoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
+		D5872C322998548D0061802F /* SkeletonBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
+		D5872C34299855070061802F /* Bones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
+		D5872C3F299880F30061802F /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
+		D8EF4CE739945BEE2594CD53 /* Pods-ARC-ARCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARC-ARCUITests.release.xcconfig"; path = "Target Support Files/Pods-ARC-ARCUITests/Pods-ARC-ARCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC0B90E929D20000007536EE /* DrawingEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingEffectViewController.swift; sourceTree = "<group>"; };
+		DC0B90EB29D200AB007536EE /* ObjectService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectService.swift; sourceTree = "<group>"; };
+		DC25675229A1BDC80061BA91 /* EffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsViewController.swift; sourceTree = "<group>"; };
+		DC25675429A1C1D40061BA91 /* EffectsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsCell.swift; sourceTree = "<group>"; };
+		DC25675629A1C5510061BA91 /* EffectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsList.swift; sourceTree = "<group>"; };
+		DC25675829A1D2930061BA91 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		DC25675A29A1D5E00061BA91 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DCC623D529A1E8920087659F /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		DCCD7EE229A19E6B0069251D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F4A1AA0BBA1C1E7A67883C47 /* Pods_ARC_ARCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARC_ARCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F0547E4761971A1FDC8022 /* Pods-ARC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARC.debug.xcconfig"; path = "Target Support Files/Pods-ARC/Pods-ARC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D53FF4C3298CA5EA0052A1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD644BCC1AAEA9C877331D58 /* Pods_ARC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53FF4D8298CA5EF0052A1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6932F60148CB7C99BE1824B0 /* Pods_ARCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53FF4E2298CA5EF0052A1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2079A832957785BD4FB24C75 /* Pods_ARC_ARCUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37B497A581F01FF79EC1B695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80CA7764800BBA7AF5B2FFE3 /* Pods_ARC.framework */,
+				F4A1AA0BBA1C1E7A67883C47 /* Pods_ARC_ARCUITests.framework */,
+				D198FC24C0BE4FFE8E813FB2 /* Pods_ARCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		417C301F9E8AC9CC296C7352 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6F0547E4761971A1FDC8022 /* Pods-ARC.debug.xcconfig */,
+				5E11BC51C7CE92DC228859F1 /* Pods-ARC.release.xcconfig */,
+				D186B19072576B366C203449 /* Pods-ARC-ARCUITests.debug.xcconfig */,
+				D8EF4CE739945BEE2594CD53 /* Pods-ARC-ARCUITests.release.xcconfig */,
+				9036E249E956DD29F1588621 /* Pods-ARCTests.debug.xcconfig */,
+				4ED0979C9F6B2E0059DBA8D7 /* Pods-ARCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D53FF4BD298CA5EA0052A1A8 = {
+			isa = PBXGroup;
+			children = (
+				D53FF4C8298CA5EA0052A1A8 /* ARC */,
+				D53FF4DE298CA5EF0052A1A8 /* ARCTests */,
+				D53FF4E8298CA5EF0052A1A8 /* ARCUITests */,
+				D53FF4C7298CA5EA0052A1A8 /* Products */,
+				417C301F9E8AC9CC296C7352 /* Pods */,
+				37B497A581F01FF79EC1B695 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D53FF4C7298CA5EA0052A1A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D53FF4C6298CA5EA0052A1A8 /* ARC.app */,
+				D53FF4DB298CA5EF0052A1A8 /* ARCTests.xctest */,
+				D53FF4E5298CA5EF0052A1A8 /* ARCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D53FF4C8298CA5EA0052A1A8 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				D5872C2B299852FF0061802F /* Info.plist */,
+				D5872C3F299880F30061802F /* character */,
+				D53FF4C9298CA5EA0052A1A8 /* AppDelegate.swift */,
+				D53FF4CD298CA5EA0052A1A8 /* Experience.rcproject */,
+				D53FF4CF298CA5EA0052A1A8 /* Main.storyboard */,
+				D53FF4D2298CA5EE0052A1A8 /* Assets.xcassets */,
+				D53FF4D4298CA5EE0052A1A8 /* LaunchScreen.storyboard */,
+				D53FF4F8298CA84B0052A1A8 /* GoogleService-Info.plist */,
+				D52CB64429B59E8200BE3F17 /* CollectionViewCell.swift */,
+				D52CB64229B59E3700BE3F17 /* CollectionViewController.swift */,
+				D5872C2C2998537F0061802F /* ARViewContainer.swift */,
+				DC0B90E929D20000007536EE /* DrawingEffectViewController.swift */,
+				DC0B90EB29D200AB007536EE /* ObjectService.swift */,
+				D5872C2E299853FE0061802F /* ContentView.swift */,
+				D5872C302998545A0061802F /* SkeletonJoint.swift */,
+				D5872C322998548D0061802F /* SkeletonBone.swift */,
+				D5872C34299855070061802F /* Bones.swift */,
+				DCCD7EE229A19E6B0069251D /* MainViewController.swift */,
+				DC25675229A1BDC80061BA91 /* EffectsViewController.swift */,
+				DC25675429A1C1D40061BA91 /* EffectsCell.swift */,
+				DC25675629A1C5510061BA91 /* EffectsList.swift */,
+				DC25675829A1D2930061BA91 /* ProfilePageViewController.swift */,
+				DC25675A29A1D5E00061BA91 /* SignupViewController.swift */,
+				DCC623D529A1E8920087659F /* SigninViewController.swift */,
+				D52946F829C8F526001E4D80 /* ARView+MetalRecordable.swift */,
+				D52946F729C8F526001E4D80 /* ARView+SelfSceneRecordable.swift */,
+			);
+			path = ARC;
+			sourceTree = "<group>";
+		};
+		D53FF4DE298CA5EF0052A1A8 /* ARCTests */ = {
+			isa = PBXGroup;
+			children = (
+				D53FF4DF298CA5EF0052A1A8 /* ARCTests.swift */,
+			);
+			path = ARCTests;
+			sourceTree = "<group>";
+		};
+		D53FF4E8298CA5EF0052A1A8 /* ARCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D53FF4E9298CA5EF0052A1A8 /* ARCUITests.swift */,
+				D53FF4EB298CA5EF0052A1A8 /* ARCUITestsLaunchTests.swift */,
+			);
+			path = ARCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D53FF4C5298CA5EA0052A1A8 /* ARC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53FF4EF298CA5EF0052A1A8 /* Build configuration list for PBXNativeTarget "ARC" */;
+			buildPhases = (
+				266E6374061B12B829AC6A5C /* [CP] Check Pods Manifest.lock */,
+				D53FF4C2298CA5EA0052A1A8 /* Sources */,
+				D53FF4C3298CA5EA0052A1A8 /* Frameworks */,
+				D53FF4C4298CA5EA0052A1A8 /* Resources */,
+				30D6656141881C956E2B2C18 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARC;
+			productName = ARC;
+			productReference = D53FF4C6298CA5EA0052A1A8 /* ARC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D53FF4DA298CA5EF0052A1A8 /* ARCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53FF4F2298CA5EF0052A1A8 /* Build configuration list for PBXNativeTarget "ARCTests" */;
+			buildPhases = (
+				568EAE2BE2A329DA4EAA2818 /* [CP] Check Pods Manifest.lock */,
+				D53FF4D7298CA5EF0052A1A8 /* Sources */,
+				D53FF4D8298CA5EF0052A1A8 /* Frameworks */,
+				D53FF4D9298CA5EF0052A1A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D53FF4DD298CA5EF0052A1A8 /* PBXTargetDependency */,
+			);
+			name = ARCTests;
+			productName = ARCTests;
+			productReference = D53FF4DB298CA5EF0052A1A8 /* ARCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D53FF4E4298CA5EF0052A1A8 /* ARCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53FF4F5298CA5EF0052A1A8 /* Build configuration list for PBXNativeTarget "ARCUITests" */;
+			buildPhases = (
+				B679A1C5B3087E9A1E969378 /* [CP] Check Pods Manifest.lock */,
+				D53FF4E1298CA5EF0052A1A8 /* Sources */,
+				D53FF4E2298CA5EF0052A1A8 /* Frameworks */,
+				D53FF4E3298CA5EF0052A1A8 /* Resources */,
+				39CF1A0529BCCC439CD7A648 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D53FF4E7298CA5EF0052A1A8 /* PBXTargetDependency */,
+			);
+			name = ARCUITests;
+			productName = ARCUITests;
+			productReference = D53FF4E5298CA5EF0052A1A8 /* ARCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D53FF4BE298CA5EA0052A1A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D53FF4C5298CA5EA0052A1A8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D53FF4DA298CA5EF0052A1A8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D53FF4C5298CA5EA0052A1A8;
+					};
+					D53FF4E4298CA5EF0052A1A8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D53FF4C5298CA5EA0052A1A8;
+					};
+				};
+			};
+			buildConfigurationList = D53FF4C1298CA5EA0052A1A8 /* Build configuration list for PBXProject "ARC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D53FF4BD298CA5EA0052A1A8;
+			productRefGroup = D53FF4C7298CA5EA0052A1A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D53FF4C5298CA5EA0052A1A8 /* ARC */,
+				D53FF4DA298CA5EF0052A1A8 /* ARCTests */,
+				D53FF4E4298CA5EF0052A1A8 /* ARCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D53FF4C4298CA5EA0052A1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5872C40299880F30061802F /* character in Resources */,
+				D53FF4D6298CA5EE0052A1A8 /* LaunchScreen.storyboard in Resources */,
+				D53FF4F9298CA84B0052A1A8 /* GoogleService-Info.plist in Resources */,
+				D53FF4D3298CA5EE0052A1A8 /* Assets.xcassets in Resources */,
+				D53FF4D1298CA5EA0052A1A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53FF4D9298CA5EF0052A1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53FF4E3298CA5EF0052A1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		266E6374061B12B829AC6A5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30D6656141881C956E2B2C18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARC/Pods-ARC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARC/Pods-ARC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARC/Pods-ARC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39CF1A0529BCCC439CD7A648 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARC-ARCUITests/Pods-ARC-ARCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARC-ARCUITests/Pods-ARC-ARCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARC-ARCUITests/Pods-ARC-ARCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		568EAE2BE2A329DA4EAA2818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B679A1C5B3087E9A1E969378 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARC-ARCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D53FF4C2298CA5EA0052A1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0B90EA29D20000007536EE /* DrawingEffectViewController.swift in Sources */,
+				DC25675329A1BDC80061BA91 /* EffectsViewController.swift in Sources */,
+				D5872C35299855070061802F /* Bones.swift in Sources */,
+				D52946F929C8F526001E4D80 /* ARView+SelfSceneRecordable.swift in Sources */,
+				D52CB64529B59E8200BE3F17 /* CollectionViewCell.swift in Sources */,
+				DC25675529A1C1D40061BA91 /* EffectsCell.swift in Sources */,
+				DC25675929A1D2930061BA91 /* ProfilePageViewController.swift in Sources */,
+				D52CB64329B59E3700BE3F17 /* CollectionViewController.swift in Sources */,
+				D5872C2F299853FE0061802F /* ContentView.swift in Sources */,
+				D53FF4CA298CA5EA0052A1A8 /* AppDelegate.swift in Sources */,
+				D52946FA29C8F526001E4D80 /* ARView+MetalRecordable.swift in Sources */,
+				D53FF4CE298CA5EA0052A1A8 /* Experience.rcproject in Sources */,
+				DC25675729A1C5510061BA91 /* EffectsList.swift in Sources */,
+				D5872C312998545A0061802F /* SkeletonJoint.swift in Sources */,
+				D5872C332998548D0061802F /* SkeletonBone.swift in Sources */,
+				DCC623D629A1E8920087659F /* SigninViewController.swift in Sources */,
+				DC25675B29A1D5E00061BA91 /* SignupViewController.swift in Sources */,
+				D5872C2D2998537F0061802F /* ARViewContainer.swift in Sources */,
+				DC0B90EC29D200AB007536EE /* ObjectService.swift in Sources */,
+				DCCD7EE329A19E6B0069251D /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53FF4D7298CA5EF0052A1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53FF4E0298CA5EF0052A1A8 /* ARCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53FF4E1298CA5EF0052A1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53FF4EA298CA5EF0052A1A8 /* ARCUITests.swift in Sources */,
+				D53FF4EC298CA5EF0052A1A8 /* ARCUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D53FF4DD298CA5EF0052A1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D53FF4C5298CA5EA0052A1A8 /* ARC */;
+			targetProxy = D53FF4DC298CA5EF0052A1A8 /* PBXContainerItemProxy */;
+		};
+		D53FF4E7298CA5EF0052A1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D53FF4C5298CA5EA0052A1A8 /* ARC */;
+			targetProxy = D53FF4E6298CA5EF0052A1A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D53FF4CF298CA5EA0052A1A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D53FF4D0298CA5EA0052A1A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D53FF4D4298CA5EE0052A1A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D53FF4D5298CA5EE0052A1A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D53FF4ED298CA5EF0052A1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D53FF4EE298CA5EF0052A1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D53FF4F0298CA5EF0052A1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F0547E4761971A1FDC8022 /* Pods-ARC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FWB6JBX553;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "We need access to upload your crafts.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera to use effects";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to photo library for profile pictures.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = connorbrowder.ARCraft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D53FF4F1298CA5EF0052A1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E11BC51C7CE92DC228859F1 /* Pods-ARC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FWB6JBX553;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "We need access to upload your crafts.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera to use effects";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to photo library for profile pictures.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = connorbrowder.ARCraft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D53FF4F3298CA5EF0052A1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9036E249E956DD29F1588621 /* Pods-ARCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR32N4AT9A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse439.ARCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARC.app/ARC";
+			};
+			name = Debug;
+		};
+		D53FF4F4298CA5EF0052A1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED0979C9F6B2E0059DBA8D7 /* Pods-ARCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR32N4AT9A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse439.ARCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARC.app/ARC";
+			};
+			name = Release;
+		};
+		D53FF4F6298CA5EF0052A1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D186B19072576B366C203449 /* Pods-ARC-ARCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR32N4AT9A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse439.ARCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARC;
+			};
+			name = Debug;
+		};
+		D53FF4F7298CA5EF0052A1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EF4CE739945BEE2594CD53 /* Pods-ARC-ARCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR32N4AT9A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse439.ARCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D53FF4C1298CA5EA0052A1A8 /* Build configuration list for PBXProject "ARC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53FF4ED298CA5EF0052A1A8 /* Debug */,
+				D53FF4EE298CA5EF0052A1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53FF4EF298CA5EF0052A1A8 /* Build configuration list for PBXNativeTarget "ARC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53FF4F0298CA5EF0052A1A8 /* Debug */,
+				D53FF4F1298CA5EF0052A1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53FF4F2298CA5EF0052A1A8 /* Build configuration list for PBXNativeTarget "ARCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53FF4F3298CA5EF0052A1A8 /* Debug */,
+				D53FF4F4298CA5EF0052A1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53FF4F5298CA5EF0052A1A8 /* Build configuration list for PBXNativeTarget "ARCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53FF4F6298CA5EF0052A1A8 /* Debug */,
+				D53FF4F7298CA5EF0052A1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D53FF4BE298CA5EA0052A1A8 /* Project object */;
+}
